@@ -1,4 +1,4 @@
-Um professor de uma certa universidade passou para os alunos a seguinte tarefa:
+'' Um professor de uma certa universidade passou para os alunos a seguinte tarefa:
  “Crie um programa que receba 3 valores e armazene em um vetor. Depois faça a média aritmética e atribua o resultado a variável X. 
 Tendo isso feito resolva a  equação abaixo,mostre se o resultado for negativo ou positivo, se caso der negativo tem de mostrar a mensagem resultado invalido”.
 Para finalizar a tarefa o aluno precisa postar a resolução do problema através de uma ferramenta virtual, mais isso só é possível através
@@ -15,7 +15,7 @@ package projeto;
 
 // importando a classe para reconhecimento do leitor
 
-''import java.util.Scanner;
+import java.util.Scanner;
 
 //Criando a pasta trabalho 
 public class Trabalho {
@@ -77,6 +77,6 @@ public class Trabalho {
 		b = nome.length();
 		System.out.println("esse é o seu codigo:" + b++);
 
-	}
+	}   ''
 
 }
