@@ -37,44 +37,74 @@ public class Trabalho {
 
 		Scanner leitor = new Scanner(System.in);
 
-// utilizando o laço de repetição abaixo para fazer três repetições. Em cada repetição em inserido um valor ao vetor previamente criado
+// utilizando o laço de repetição abaixo para fazer três repetições. Em cada repetição em inserir um valor ao vetor previamente criado
 , os valores atribuidos aos tres vetores são acomulados na variavel soma.
 
 		while(x<=2) {
+		
+//print para mostrar ao usuario o que esta sendo requisitado.
+
 			System.out.println("digite o numero");
       
-			//lendo dados do teclado em formato String, utilizando o parse para converter para inteiro e utilizando entrada de dados.
-      
+//lendo dados do teclado em formato String, utilizando o parse para converter para inteiro e utilizando entrada de dados e atribuir a variavel n o valor inserido pelo usuario.  
+			
 			int n = Integer.parseInt(leitor.nextLine());
+			
+//atribuir o valor da variavel n a primeira posição livre do vetor em questão
+
 			vetor[x] = n;
+			
+//atribuir o valor 1 a variavel x para controlar o numero de voltas do while.
+			
 			x = x+1;
+			
+//acumular os valores da variavel n presente nas três voltas do laço de repetição
+
 			soma = soma + n;
 		}
     
-  // dividindo o valor acumulado na variavel soma para obter a media aritmetica e atribuir a variavel x
+ // dividindo o valor acumulado na variavel soma para obter a media aritmetica e atribuir a variavel x
   
 		resultado = soma/3;
+		
+//mostrar resultado
+
 		System.out.println(resultado);''
 
-// utilizando a classe math, substituindo o valor da variavel x e aplicando os metodos de resolução para variavel com potencia e depois somando tudo.
+// utilizando a classe math, substituindo o valor da variavel x e aplicando os metodos de resolução para variavel com potencia e depois somando tudo para resolver a equação.
 	
     double y = Math.pow(resultado,2) + (resultado) + 1;
     
-    // utilizando a estrutura de decisão para  determinar se o resultado é positivo ou invalido se der negativo
+// utilizando a estrutura de decisão para  determinar se o resultado é positivo ou invalido se der negativo
 		
     if (y >0){
+   
+  // mostrar resultado positivo
+  
 			System.out.println("Resultado positivo: " +y);
 
 		}else {
+
+// mostrar resultado negativo
+
 			System.out.println("Resultado invalido");
 
 		}
 
-		// utilizando a classe string sobre a variavel nome para receber o nome do usuario, depois utilizando o metodo da classe para obter o numero de letras que compões o nome do usuario e assim obter o codigo de acesso.
+// mostrando através do print para o usuario o que esta sendo solicitado.
 		
     System.out.println("digite o nome do aluno");
+    
+// utilizando a classe string sobre a variavel nome para receber o nome do usuario
+
 		String nome = leitor.nextLine();
+		
+//utilizando o metodo lenght para obter o numero de letras que compões o nome  do aluno e assim obter o codigo de acesso
+
 		b = nome.length();
+		
+//por fim print para mostrar tudo
+
 		System.out.println("esse é o seu codigo:" + b++);
 
 	}   ''
