@@ -18,19 +18,24 @@ package projeto;
 import java.util.Scanner;
 
 //Criando a pasta trabalho 
+
 public class Trabalho {
 
 // Utilizando o metodo estatico
+
 	public static void main(String[] args) {
   
 // declarando as variaveis abaixo e utilizando os tipos de dados
+
 		int x = 0;
 		int soma = 0;
 		int l = 0;
 		int s = 0;
 		int b = 0;
 		int resultado = 0;
+		
 // criando o vetor
+
 		int vetor[] = new int[3];
     
 // declarando a variavel leitor sobre a classe scanner;
@@ -46,7 +51,7 @@ public class Trabalho {
 
 			System.out.println("digite o numero");
       
-//lendo dados do teclado em formato String, utilizando o parse para converter para inteiro e utilizando entrada de dados e atribuir a variavel n o valor inserido pelo usuario.  
+//lendo dados do teclado em formato String, utilizando o parse para converter para inteiro, utilizando entrada de dados e atribuir a variavel n o valor inserido pelo usuario.  
 			
 			int n = Integer.parseInt(leitor.nextLine());
 			
