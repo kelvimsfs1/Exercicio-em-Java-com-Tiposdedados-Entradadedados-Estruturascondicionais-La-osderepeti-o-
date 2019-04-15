@@ -1,0 +1,82 @@
+Um professor de uma certa universidade passou para os alunos a seguinte tarefa:
+ “Crie um programa que receba 3 valores e armazene em um vetor. Depois faça a média aritmética e atribua o resultado a variável X. 
+Tendo isso feito resolva a  equação abaixo,mostre se o resultado for negativo ou positivo, se caso der negativo tem de mostrar a mensagem resultado invalido”.
+Para finalizar a tarefa o aluno precisa postar a resolução do problema através de uma ferramenta virtual, mais isso só é possível através
+de um código que contém uma quantidade de números proporcional a quantidade de letras que compõe o nome do aluno. 
+Resolva o problema do aluno e descubra o código usado para postar a resposta.
+
+Equação: X²+X+1=0
+
+
+
+
+
+package projeto;
+
+// importando a classe para reconhecimento do leitor
+
+''import java.util.Scanner;
+
+//Criando a pasta trabalho 
+public class Trabalho {
+
+// Utilizando o metodo estatico
+	public static void main(String[] args) {
+  
+// declarando as variaveis abaixo e utilizando os tipos de dados
+		int x = 0;
+		int soma = 0;
+		int l = 0;
+		int s = 0;
+		int b = 0;
+		int resultado = 0;
+// criando o vetor
+		int vetor[] = new int[3];
+    
+// declarando a variavel leitor sobre a classe scanner;
+
+		Scanner leitor = new Scanner(System.in);
+
+// utilizando o laço de repetição abaixo para fazer três repetições. Em cada repetição em inserido um valor ao vetor previamente criado
+, os valores atribuidos aos tres vetores são acomulados na variavel soma.
+
+		while(x<=2) {
+			System.out.println("digite o numero");
+      
+			//lendo dados do teclado em formato String, utilizando o parse para converter para inteiro e utilizando entrada de dados.
+      
+			int n = Integer.parseInt(leitor.nextLine());
+			vetor[x] = n;
+			x = x+1;
+			soma = soma + n;
+		}
+    
+  // dividindo o valor acumulado na variavel soma para obter a media aritmetica e atribuir a variavel x
+  
+		resultado = soma/3;
+		System.out.println(resultado);''
+
+// utilizando a classe math, substituindo o valor da variavel x e aplicando os metodos de resolução para variavel com potencia e depois somando tudo.
+	
+    double y = Math.pow(resultado,2) + (resultado) + 1;
+    
+    // utilizando a estrutura de decisão para  determinar se o resultado é positivo ou invalido se der negativo
+		
+    if (y >0){
+			System.out.println("Resultado positivo: " +y);
+
+		}else {
+			System.out.println("Resultado invalido");
+
+		}
+
+		// utilizando a classe string sobre a variavel nome para receber o nome do usuario, depois utilizando o metodo da classe para obter o numero de letras que compões o nome do usuario e assim obter o codigo de acesso.
+		
+    System.out.println("digite o nome do aluno");
+		String nome = leitor.nextLine();
+		b = nome.length();
+		System.out.println("esse é o seu codigo:" + b++);
+
+	}
+
+}
